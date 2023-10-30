@@ -1,23 +1,33 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: helvetica, sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
 }
 
 a {
-    color: #00abff;
+    color: #ff6b81; /* Розовый */
     text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ef1641; /* Более яркий розовый при наведении */
 }
 
 h1 {
-    font-weight: normal;
-    border-bottom: 1px solid #bbb;
+    font-weight: bold;
+    border-bottom: 2px solid #3f3f3f;
     padding: 0 0 10px 0;
+    color: #3f3f3f;
+    font-size: 28px;
 }
 
 h2 {
     font-weight: normal;
-    margin: 30px 0 0;
+    margin: 20px 0 10px;
+    color: #ffffff;
+    font-size: 24px;
 }
 
 #content {
@@ -30,68 +40,74 @@ h2 {
     float: right;
     width: 30%;
     padding: 10px;
-    background: #efefef;
+    background: #ff6b81;
     height: 100%;
 }
 
 p.date {
-    color: #ccc;
-    font-family: georgia, serif;
-    font-size: 12px;
+    color: #ff99cc; /* Более яркий розовый */
+    font-family: Georgia, serif;
+    font-size: 14px;
     font-style: italic;
 }
 
 /* pagination */
 .pagination {
-    margin: 40px 0;
+    margin: 20px 0;
     font-weight: bold;
 }
 
 /* forms */
 label {
-    float: left;
     clear: both;
-    color: #333;
-    margin-bottom: 4px;
+    color: #3399cc; /* Голубой */
+    margin-bottom: 10px;
+    font-size: 16px;
 }
 
 input, textarea {
     clear: both;
-    float: left;
-    margin: 0 0 10px;
-    background: #ededed;
-    border: 0;
-    padding: 6px 10px;
-    font-size: 12px;
+    margin: 0 0 15px;
+    background: #ffccf2; /* Бледный розовый */
+    border: 1px solid #ff99cc; /* Более яркий розовый */
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
 }
 
 input[type=submit] {
     font-weight: bold;
-    background: #00abff;
+    background: #0099cc; /* Голубой */
     color: #fff;
-    padding: 10px 20px;
-    font-size: 14px;
+    padding: 12px 20px;
+    font-size: 18px;
     text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 .errorlist {
-    color: #cc0033;
-    float: left;
-    clear: both;
+    color: #ff6b81; /* Розовый */
     padding-left: 10px;
+    font-size: 14px;
 }
 
 /* comments */
 .comment {
-    padding: 10px;
+    padding: 15px;
+    background: #ffccf2; /* Бледный розовый */
+    border: 1px solid #ff99cc; /* Более яркий розовый */
+    border-radius: 5px;
+    margin-bottom: 15px;
 }
 
 .comment:nth-child(even) {
-    background: #efefef;
+    background: #ff99cc; /* Более яркий розовый */
 }
 
 .comment .info {
     font-weight: bold;
-    font-size: 12px;
-    color: #666;
+    font-size: 16px;
+    color: #3399cc; /* Голубой */
 }
